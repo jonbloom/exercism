@@ -1,5 +1,5 @@
 def slices(numbers, length):
-	if length > len(numbers) or length < 1:
+	if len(numbers) < length < 1:
 		raise ValueError
 	numbers = [int(i) for i in numbers]
 	slices = list()
